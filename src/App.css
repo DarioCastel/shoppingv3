@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    background: linear-gradient(0deg, rgb(141, 236, 236),white,rgb(141, 236, 236));
+}
+
+.container .cards{
+    background: rgb(248, 248, 248);
+    height: 320px;
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 1 auto;
+    margin: 15px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    transition: .4s ease;
+    justify-content: space-between;
+}
+
+.container .cards:hover{
+    transform: scale(1.1);
+}
+.container .cards .card-img{
+display: flex;
+justify-content: center;
+background: white;
+border-radius: 30px;
+transform: .4s ease;
+margin: 25px;
+transition: .4s ease;
+}
+.container .cards:hover .card-img{
+transform: scale(1.1)
+            rotate(5deg)
+            translateX(-5px)
+}
+
+.container .cards .btn-carro{
+    cursor: pointer;
+    background: linear-gradient(45deg, yellow, orange);
+    height: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 30px;    
+}
+img{
+    width: auto;
+    height: 100px;
+}
+
+.cards .card-content h3{
+    color: black;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.cards .card-content p{
+    color: grey;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 8px 0 22px;
+    text-align: justify;
+}
+
+h3{
+    color: black;
+    font-size: 30px;
+    margin: 20px;
+}
+
+p{
+    color: grey;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 8px 0 22px;
+    text-align: justify;
+}
